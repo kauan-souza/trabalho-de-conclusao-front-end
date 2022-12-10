@@ -1,6 +1,4 @@
-package br.com.fundatec.transaction.domain.usecase
-
-import java.util.*
+package br.com.fundatec.jogoAmanha.domain.usecase
 
 data class TransactionModel(
     val timeMandante: String,

@@ -1,4 +1,4 @@
-package br.com.fundatec.transaction.data.remote
+package br.com.fundatec.jogoHoje.data.remote
 
 import com.squareup.moshi.JsonClass
 

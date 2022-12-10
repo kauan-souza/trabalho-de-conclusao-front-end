@@ -1,7 +1,7 @@
-package br.com.fundatec.transaction.data.remote
+package br.com.fundatec.jogoAmanha.data.remote
 
 
-sealed class ErrorModel{
+sealed class ErrorModel {
     object EmptyList : ErrorModel()
     object Network : ErrorModel()
 }

@@ -1,21 +1,21 @@
-package br.com.fundatec
+package br.com.fundatec.jogoHoje
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.fundatec.databinding.ItemListBinding
-import br.com.fundatec.transaction.domain.usecase.TransactionModel
+import br.com.fundatec.jogoHoje.domain.usecase.TransactionModel
 
-class TransactionAdapter() : RecyclerView.Adapter<TransactionViewHolder>() {
+class JogoHojeAdapter() : RecyclerView.Adapter<JogoHojeViewHolder>() {
 
     private val listItem: MutableList<TransactionModel> = mutableListOf()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JogoHojeViewHolder {
         val binding = ItemListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return TransactionViewHolder(binding)
+        return JogoHojeViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: TransactionViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: JogoHojeViewHolder, position: Int) {
         val item = listItem[position]
         holder.bind(item)
     }
@@ -30,7 +30,7 @@ class TransactionAdapter() : RecyclerView.Adapter<TransactionViewHolder>() {
 
 }
 
-class TransactionViewHolder(
+class JogoHojeViewHolder(
     private val binding: ItemListBinding,
 ) : RecyclerView.ViewHolder(binding.root) {
 

@@ -1,19 +1,20 @@
-package br.com.fundatec.transaction
+package br.com.fundatec.jogoAmanha
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import br.com.fundatec.transaction.data.remote.ErrorModel
-import br.com.fundatec.transaction.data.remote.ResultModel
-import br.com.fundatec.transaction.domain.usecase.GetTransactionUsecase
-import br.com.fundatec.transaction.domain.usecase.TransactionModel
+import br.com.fundatec.jogoAmanha.data.remote.ErrorModel
+import br.com.fundatec.jogoAmanha.data.remote.ResultModel
+import br.com.fundatec.jogoAmanha.domain.usecase.GetJogoAmanhaUsecase
+import br.com.fundatec.jogoAmanha.domain.usecase.TransactionModel
+
 import kotlinx.coroutines.launch
 
-class TransactionViewModel : ViewModel() {
+class JogoAmanhaViewModel : ViewModel() {
 
     private val usecase by lazy {
-        GetTransactionUsecase()
+        GetJogoAmanhaUsecase()
     }
 
     private val transaction: MutableLiveData<List<TransactionModel>?> = MutableLiveData()

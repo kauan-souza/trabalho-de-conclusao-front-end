@@ -1,8 +1,8 @@
-package br.com.fundatec.transaction.data.remote
+package br.com.fundatec.jogoHoje.data.remote
 
 import retrofit2.http.GET
 
-interface TransactionApi {
+interface JogoHojeApi {
 
     @GET("/v1/jogos/hoje")
     suspend fun getJogosHoje(): List<TransactionResponse>

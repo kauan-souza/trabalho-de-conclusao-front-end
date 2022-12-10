@@ -15,8 +15,13 @@
         android:theme="@style/Theme.LP4fake"
         tools:targetApi="31"
         android:usesCleartextTraffic="true">
+
         <activity
-            android:name=".transaction.TransactionActivity"
+            android:name=".jogoAmanha.JogoAmanhaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".jogoHoje.JogoHojeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
